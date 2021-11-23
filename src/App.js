@@ -8,10 +8,7 @@ class App extends Component {
     return (
       <>
         <NavBar></NavBar>
-        <ItemListContainer
-          title="Titulo"
-          subtitle="Subtitulo"
-        ></ItemListContainer>
+        <ItemListContainer></ItemListContainer>
       </>
     );
   }

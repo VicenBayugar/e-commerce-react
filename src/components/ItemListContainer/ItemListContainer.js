@@ -1,23 +1,19 @@
-import React, { Fragment } from "react";
+import React from "react";
+import ItemCount from "../ItemCount.js/ItemCount";
 
-const ItemListContainer = (props) => {
+const ItemListContainer = () => {
   return (
-    <Fragment>
-      <div className="card mb-3" style={{ maxWidth: 540 }}>
-        <div className="row g-0">
-          <div className="col-md-4"></div>
-          <div className="col-md-8">
-            <div className="card-body">
-              <h5 className="card-title">{props.title}</h5>
-              <p className="card-text">{props.subtitle}</p>
-              <p className="card-text">
-                <small className="text-muted">Last updated 3 mins ago</small>
-              </p>
-            </div>
-          </div>
-        </div>
+    <div className="container pt-4 pb-5">
+      <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        <ItemCount
+          precio="1000"
+          precioEnUSD="5"
+          nombreProducto="Iphone 12"
+          descripcion="128gb RED"
+          stock="10"
+        />
       </div>
-    </Fragment>
+    </div>
   );
 };
 
