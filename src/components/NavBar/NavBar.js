@@ -8,7 +8,7 @@ const NavBar = () => {
     <Fragment>
       <nav className="navbar navbar-expand-md navbar-light pt-3 pb-3">
         <div className="container d-flex justify-content-lg-around ">
-          <a href="index.html" className="navbar-brand">
+          <a href="index.html" className="navbar-brand text-primary">
             <h1>AppleStore</h1>
           </a>
 
@@ -24,17 +24,17 @@ const NavBar = () => {
           <div className="collapse navbar-collapse" id="navmenu">
             <ul className="navbar-nav me-auto ms-auto botones">
               <li className="nav-item">
-                <a href="index.html" className="nav-link fs-4">
+                <a href="index.html" className="nav-link fs-4 text-primary">
                   Inicio
                 </a>
               </li>
               <li className="nav-item">
-                <a href="index.html" className="nav-link fs-4">
+                <a href="index.html" className="nav-link fs-4 text-primary">
                   Productos
                 </a>
               </li>
               <li className="nav-item">
-                <a href="index.html" className="nav-link fs-4">
+                <a href="index.html" className="nav-link fs-4 text-primary">
                   <CartWidget />
                 </a>
               </li>
