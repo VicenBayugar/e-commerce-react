@@ -1,15 +1,14 @@
 import React from "react";
+import "./Loading.css";
 
 const Loading = () => {
   return (
-    <div className="d-flex justify-content-center">
+    <div className="loading d-flex justify-content-center p-5">
       <div
         className="spinner-border mb-5"
         role="status"
-        style={{ width: "10rem", height: "10rem" }}
-      >
-        <span className="visually-hidden">Loading...</span>
-      </div>
+        style={{ width: "7rem", height: "7rem" }}
+      ></div>
     </div>
   );
 };

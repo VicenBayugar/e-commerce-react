@@ -26,15 +26,16 @@ const ItemDetail = ({ producto }) => {
   // }
 
   return (
-    <div className="container">
+    <div className="container bg-white">
       <div className=" shadow row row-cols-1 row-cols-md-2">
         <div className="mt-auto mb-auto col">
-          <img src={producto.image} className=" p-2 imgDetail" alt="#"></img>
+          <img src={producto.image} className=" p-1 imgDetail" alt="#"></img>
         </div>
-        <div className=" mx-auto col mt-auto mb-auto">
-          <h5 className=" text-center">US${producto.price}</h5>
-          <h6 className=" text-center">{producto.title}</h6>
+        <div className="p-2 mx-auto col mt-auto mb-auto">
+          <h5 className=" text-center">{producto.title}</h5>
           <p className="small text-center">{producto.description}</p>
+          <hr />
+          <h5 className=" text-center">US${producto.price}</h5>
           <div
             className="d-grid gap-2 col-9 mx-auto pb-3"
             onClick={() => agregarAlCarrito()}

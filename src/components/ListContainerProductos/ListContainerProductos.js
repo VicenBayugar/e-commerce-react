@@ -7,11 +7,15 @@ const ListContainerProductos = () => {
   const [loader, setLoader] = useState(true);
 
   useEffect(() => {
-    setLoader(true);
-    fetch("https://fakestoreapi.com/products/category/electronics")
-      .then((response) => response.json())
-      .then((json) => setProducts(json));
-    setLoader(false);
+    const obtenerProducts = async () => {
+      const data = await fetch(
+        "https://fakestoreapi.com/products/category/electronics"
+      );
+      const productsObtenidos = await data.json();
+      setProducts(productsObtenidos);
+      setLoader(false);
+    };
+    obtenerProducts();
   }, []);
   return (
     <>

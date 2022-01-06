@@ -1,3 +1,9 @@
 .itemDetailContainer{
-    width: 65%;
+    width: 60%;
 }
+
+@media (max-width: 576px) { 
+    .itemDetailContainer{
+        width: 95%;
+    }
+ }

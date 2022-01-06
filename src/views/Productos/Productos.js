@@ -3,7 +3,9 @@ import ListContainerProductos from "../../components/ListContainerProductos/List
 
 const Productos = () => {
   return (
-    <div style={{ background: "#eee" }}>
+    <div style={{ background: "#eee" }} className="pt-3">
+      <h2 className="container ">Productos</h2>
+      <hr className="container" />
       <ListContainerProductos />
     </div>
   );

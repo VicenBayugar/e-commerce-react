@@ -3,7 +3,7 @@ import ItemDetailContainer from "../../components/ItemDetailContainer/ItemDetail
 
 const ItemDetail = () => {
   return (
-    <div style={{ background: "#eee" }}>
+    <div style={{ background: "#eee" }} className="pt-5 pb-5">
       <ItemDetailContainer />;
     </div>
   );

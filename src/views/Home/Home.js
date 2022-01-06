@@ -3,8 +3,8 @@ import ItemListContainer from "../../components/ItemListContainer/ItemListContai
 
 const Home = () => {
   return (
-    <div style={{ background: "#eee" }}>
-      <h2 className="container pt-3">Ofertas</h2>
+    <div style={{ background: "#eee" }} className="pt-3">
+      <h2 className="container ">Ofertas</h2>
       <hr className="container" />
       <ItemListContainer />
     </div>
