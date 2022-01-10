@@ -7,7 +7,7 @@ const Cart = () => {
   const totalAPagar = () => {
     let total = 0;
     carrito.forEach((producto) => {
-      total = total + producto.price;
+      total = total + producto.price * producto.quantity;
     });
     return total;
   };
@@ -31,8 +31,13 @@ const Cart = () => {
                 >
                   <div>
                     <h6 className="my-0">{producto.title}</h6>
+                    <small className="text-muted">
+                      Cantidad: {producto.quantity}
+                    </small>
                   </div>
-                  <span className="text-muted">${producto.price}</span>
+                  <span className="text-muted">
+                    ${producto.price * producto.quantity}
+                  </span>
                 </li>
               );
             })}
