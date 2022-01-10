@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import CartWidget from "../CartWidget/CartWidget";
 import { Link } from "react-router-dom";
+import { carritoContext } from "../../context/CartContext";
 
 const NavBar = () => {
+  const { carrito } = useContext(carritoContext);
+
+  const ItemsCarrito = () => {
+    return carrito.length;
+  };
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-dark navbar-dark pt-4 pb-4">
@@ -34,8 +40,9 @@ const NavBar = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link fs-4 text-light" to="/Carrito">
+                <Link className="nav-link fs-5 text-light" to="/Carrito">
                   <CartWidget />
+                  {"(" + ItemsCarrito() + ")"}
                 </Link>
               </li>
             </ul>

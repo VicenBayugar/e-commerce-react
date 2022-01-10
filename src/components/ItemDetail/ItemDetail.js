@@ -46,7 +46,7 @@ const ItemDetail = ({ producto }) => {
           <h5 className=" text-center">US${producto.price}</h5>
           <div className="d-flex justify-content-center align-items-center pb-2">
             <button
-              className="btn pe-3"
+              className="btn pe-3 botones"
               onClick={() => {
                 if (counter > 1) {
                   setCounter(counter - 1);
@@ -57,7 +57,7 @@ const ItemDetail = ({ producto }) => {
             </button>
             {counter}
             <button
-              className="btn px-3"
+              className="btn px-3 botones"
               onClick={() => {
                 setCounter(counter + 1);
               }}
