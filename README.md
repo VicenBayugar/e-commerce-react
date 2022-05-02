@@ -20,6 +20,6 @@ It is an e-commerce made with React, Bootstrap and CSS.
 
 ## Deploy
 
-Open: [https://ecommerbayugar.netlify.app/](https://ecommerbayugar.netlify.app/)
+Open: [Tienda Electrónica](https://ecommerbayugar.netlify.app/)
 
 _Last update: 05/02/2022._
